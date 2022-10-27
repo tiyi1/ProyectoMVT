@@ -1,0 +1,9 @@
+{% extends 'gestion_clinica/base.html' %}
+{% block titulo%} Lista de todos los empleados {% endblock %}
+{% block contenido %}
+  {% for empleado in empleados %}
+      <ul>
+          <li>{{ empleado }}</li>
+      </ul>
+  {% endfor %}
+{% endblock %}

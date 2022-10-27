@@ -1,0 +1,9 @@
+{% extends 'gestion_clinica/base.html' %}
+{% block titulo%} Lista de todos los pacientes {% endblock %}
+{% block contenido %}
+  {% for paciente in pacientes %}
+      <ul>
+          <li>{{ paciente }}</li>
+      </ul>
+  {% endfor %}
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'gestion_clinica/base.html' %}
+{% block titulo%} Lista de todos los proveedores {% endblock %}
+{% block contenido %}
+  {% for proveedor in proveedores %}
+      <ul>
+          <li>{{ proveedor }}</li>
+      </ul>
+  {% endfor %}
+{% endblock %}
